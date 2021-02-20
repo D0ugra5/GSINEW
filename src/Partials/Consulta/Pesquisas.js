@@ -5,7 +5,7 @@ import Constants from "expo-constants";
 const Header = ({props}) =>{
 
     return(
-      <Layout style={styles.container3} level='3'>
+      <Layout style={styles.container3} level='2'>
         <View {...props}>
           <Text category='h6'>Unidade: UBS Itaqua </Text>
     
@@ -47,7 +47,7 @@ export const Pesquisa = () => {
                     {data.map(renderOption)}
                 </Select>
                 <ScrollView>
-               
+                <Layout style={styles.container2} level='3'>
                 <Card style={styles.card}  status='primary'    header={Header}>
       <Text>
       Consulta Agendada
@@ -352,7 +352,7 @@ Data: 23/10/2021
       </Text>
     </Card>
   
-
+    </Layout>
 
                 </ScrollView>
 

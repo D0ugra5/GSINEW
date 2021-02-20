@@ -20,7 +20,7 @@ export const Agendado = () => (
 
     <>
      <ScrollView>
-        <Layout style={styles.container2} level='1'>
+        <Layout style={styles.container2} level='3'>
 
          
                
@@ -237,7 +237,7 @@ const styles = StyleSheet.create({
 
     },
     card:{
-        marginTop:20,
+        marginTop:30,
       width:"100%",
 
 
