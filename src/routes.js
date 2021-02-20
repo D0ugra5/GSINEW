@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 
 const Stack = createStackNavigator();
+import Perfil from './pages/Perfil/Perfil.js'
 import Consultas from './pages/Consultas/consulta.js'
 import HomeScreen from './pages/HomePage/HomePage.js'
 
@@ -25,7 +26,7 @@ function Routas() {
 
 <Stack.Screen
           name="Consultas"
-          component={Consultas}
+          component={Perfil}
           
         />
        
