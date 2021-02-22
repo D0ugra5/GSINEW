@@ -67,6 +67,14 @@ const styles = StyleSheet.create({
     padding: 10,
     marginTop: 50,
   },
+
+  main2:{
+    borderWidth:1,
+    borderColor:'#000',
+    flex:1,
+    height:980
+  
+  }
 });
 
 export default styles;
