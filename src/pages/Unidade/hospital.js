@@ -8,7 +8,7 @@ const Header = (props) =>{
 return(
   <Layout style={styles.container2} level='3'>
     <View {...props}>
-      <Text category='h6'>Unidade: Ubs Itaquacetuba </Text>
+      <Text category='h6'>Unidade: Hospital Itaquacetuba </Text>
 
     </View>
    </Layout>
@@ -16,7 +16,7 @@ return(
 
 } 
 
-export const Agendado = () => (
+export const Hospital = () => (
 
     <>
      <ScrollView>
@@ -24,193 +24,143 @@ export const Agendado = () => (
 
          
                
-                 <Card style={styles.card}  status='primary'    header={Header}>
+        <Card style={styles.card}  status='primary'    header={Header}>
       <Text>
-      Consulta Agendada
+      Bairro: teste
   
             
       </Text>
       <Text>
 
-Data: 23/10/2021
+Rua: teste do teste n:144
       
 </Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
 
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
+  
           <Text>
-  Exame: Dentista
+  Distancia:0,6 km
   
             
       </Text>
     </Card>
 
-    
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: Clinico
-  
-            
-      </Text>
-    </Card>
 
     <Card style={styles.card}  status='primary'    header={Header}>
       <Text>
-      Consulta Agendada
+      Bairro: teste
   
             
       </Text>
       <Text>
 
-Data: 23/10/2021
+Rua: teste do teste n:144
       
 </Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
 
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
+  
           <Text>
-  Exame: ginicologista
+  Distancia:0,6 km
   
             
       </Text>
     </Card>
-
     <Card style={styles.card}  status='primary'    header={Header}>
       <Text>
-      Consulta Agendada
+      Bairro: teste
   
             
       </Text>
       <Text>
 
-Data: 23/10/2021
+Rua: teste do teste n:144
       
 </Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
 
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
+  
           <Text>
-  Exame: cardiologista
+  Distancia:0,6 km
   
             
       </Text>
     </Card>
-
     <Card style={styles.card}  status='primary'    header={Header}>
       <Text>
-      Consulta Agendada
+      Bairro: teste
   
             
       </Text>
       <Text>
 
-Data: 23/10/2021
+Rua: teste do teste n:144
       
 </Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
 
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
+  
           <Text>
-  Exame: pediatra
+  Distancia:0,6 km
   
             
       </Text>
     </Card>
-
     <Card style={styles.card}  status='primary'    header={Header}>
       <Text>
-      Consulta Agendada
+      Bairro: teste
   
             
       </Text>
       <Text>
 
-Data: 23/10/2021
+Rua: teste do teste n:144
       
 </Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
 
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
+  
           <Text>
-  Exame: urologista 
+  Distancia:0,6 km
+  
+            
+      </Text>
+    </Card>
+    <Card style={styles.card}  status='primary'    header={Header}>
+      <Text>
+      Bairro: teste
+  
+            
+      </Text>
+      <Text>
+
+Rua: teste do teste n:144
+      
+</Text>
+
+  
+          <Text>
+  Distancia:0,6 km
+  
+            
+      </Text>
+    </Card>
+    <Card style={styles.card}  status='primary'    header={Header}>
+      <Text>
+      Bairro: teste
+  
+            
+      </Text>
+      <Text>
+
+Rua: teste do teste n:144
+      
+</Text>
+
+  
+          <Text>
+  Distancia:0,6 km
   
             
       </Text>
     </Card>
 
+ 
 
         </Layout>
         </ScrollView>
@@ -250,4 +200,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default Agendado
+export default Hospital

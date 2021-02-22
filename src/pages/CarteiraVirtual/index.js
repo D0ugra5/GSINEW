@@ -8,7 +8,7 @@ const Header = (props) =>{
 return(
   <Layout style={styles.container2} level='3'>
     <View {...props}>
-      <Text category='h6'>Unidade: Ubs Itaquacetuba </Text>
+      <Text category='h6'>Unidade: UBS ITAQUA </Text>
 
     </View>
    </Layout>
@@ -16,7 +16,7 @@ return(
 
 } 
 
-export const Agendado = () => (
+export const Carteira = () => (
 
     <>
      <ScrollView>
@@ -26,13 +26,12 @@ export const Agendado = () => (
                
                  <Card style={styles.card}  status='primary'    header={Header}>
       <Text>
-      Consulta Agendada
-  
+      Vacinado Em:
             
       </Text>
       <Text>
 
-Data: 23/10/2021
+Data: 23/01/2021
       
 </Text>
   
@@ -45,43 +44,11 @@ Data: 23/10/2021
   
 
   <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
+  Funcionario Aplicação: ClodoValdo Da Silva Crm: 21334
           
           </Text>
           <Text>
-  Exame: Dentista
-  
-            
-      </Text>
-    </Card>
-
-    
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: Clinico
+  Vacina: CoronaVac
   
             
       </Text>
@@ -89,13 +56,12 @@ Data: 23/10/2021
 
     <Card style={styles.card}  status='primary'    header={Header}>
       <Text>
-      Consulta Agendada
-  
+      Vacinado Em:
             
       </Text>
       <Text>
 
-Data: 23/10/2021
+Data: 23/01/2021
       
 </Text>
   
@@ -108,25 +74,25 @@ Data: 23/10/2021
   
 
   <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
+  Funcionario Aplicação: ClodoValdo Da Silva Crm: 21334
           
           </Text>
           <Text>
-  Exame: ginicologista
+  Vacina: CoronaVac
   
             
       </Text>
     </Card>
+
 
     <Card style={styles.card}  status='primary'    header={Header}>
       <Text>
-      Consulta Agendada
-  
+      Vacinado Em:
             
       </Text>
       <Text>
 
-Data: 23/10/2021
+Data: 23/01/2021
       
 </Text>
   
@@ -139,25 +105,25 @@ Data: 23/10/2021
   
 
   <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
+  Funcionario Aplicação: ClodoValdo Da Silva Crm: 21334
           
           </Text>
           <Text>
-  Exame: cardiologista
+  Vacina: CoronaVac
   
             
       </Text>
     </Card>
+
 
     <Card style={styles.card}  status='primary'    header={Header}>
       <Text>
-      Consulta Agendada
-  
+      Vacinado Em:
             
       </Text>
       <Text>
 
-Data: 23/10/2021
+Data: 23/01/2021
       
 </Text>
   
@@ -170,25 +136,25 @@ Data: 23/10/2021
   
 
   <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
+  Funcionario Aplicação: ClodoValdo Da Silva Crm: 21334
           
           </Text>
           <Text>
-  Exame: pediatra
+  Vacina: CoronaVac
   
             
       </Text>
     </Card>
+
 
     <Card style={styles.card}  status='primary'    header={Header}>
       <Text>
-      Consulta Agendada
-  
+      Vacinado Em:
             
       </Text>
       <Text>
 
-Data: 23/10/2021
+Data: 23/01/2021
       
 </Text>
   
@@ -201,15 +167,53 @@ Data: 23/10/2021
   
 
   <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
+  Funcionario Aplicação: ClodoValdo Da Silva Crm: 21334
           
           </Text>
           <Text>
-  Exame: urologista 
+  Vacina: CoronaVac
   
             
       </Text>
     </Card>
+
+
+    <Card style={styles.card}  status='primary'    header={Header}>
+      <Text>
+      Vacinado Em:
+            
+      </Text>
+      <Text>
+
+Data: 23/01/2021
+      
+</Text>
+  
+<Text>
+       Horario: 14:50 
+       
+       
+  </Text>
+      
+  
+
+  <Text>
+  Funcionario Aplicação: ClodoValdo Da Silva Crm: 21334
+          
+          </Text>
+          <Text>
+  Vacina: CoronaVac
+  
+            
+      </Text>
+    </Card>
+
+
+
+
+
+
+
 
 
         </Layout>
@@ -250,4 +254,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default Agendado
+export default Carteira

@@ -16,7 +16,7 @@ return(
 
 } 
 
-export const Agendado = () => (
+export const UBS = () => (
 
     <>
      <ScrollView>
@@ -26,192 +26,168 @@ export const Agendado = () => (
                
                  <Card style={styles.card}  status='primary'    header={Header}>
       <Text>
-      Consulta Agendada
+      Bairro: teste
   
             
       </Text>
       <Text>
 
-Data: 23/10/2021
+Rua: teste do teste n:144
       
 </Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
 
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
+  
           <Text>
-  Exame: Dentista
+  Distancia:0,6 km
   
             
       </Text>
     </Card>
+
+    <Card style={styles.card}  status='primary'    header={Header}>
+      <Text>
+      Bairro: teste
+  
+            
+      </Text>
+      <Text>
+
+Rua: teste do teste n:144
+      
+</Text>
+
+  
+          <Text>
+  Distancia:0,6 km
+  
+            
+      </Text>
+    </Card>
+
+
+    <Card style={styles.card}  status='primary'    header={Header}>
+      <Text>
+      Bairro: teste
+  
+            
+      </Text>
+      <Text>
+
+Rua: teste do teste n:144
+      
+</Text>
+
+  
+          <Text>
+  Distancia:0,6 km
+  
+            
+      </Text>
+    </Card>
+
+
+    <Card style={styles.card}  status='primary'    header={Header}>
+      <Text>
+      Bairro: teste
+  
+            
+      </Text>
+      <Text>
+
+Rua: teste do teste n:144
+      
+</Text>
+
+  
+          <Text>
+  Distancia:0,6 km
+  
+            
+      </Text>
+    </Card>
+    <Card style={styles.card}  status='primary'    header={Header}>
+      <Text>
+      Bairro: teste
+  
+            
+      </Text>
+      <Text>
+
+Rua: teste do teste n:144
+      
+</Text>
+
+  
+          <Text>
+  Distancia:0,6 km
+  
+            
+      </Text>
+    </Card>
+
+    <Card style={styles.card}  status='primary'    header={Header}>
+      <Text>
+      Bairro: teste
+  
+            
+      </Text>
+      <Text>
+
+Rua: teste do teste n:144
+      
+</Text>
+
+  
+          <Text>
+  Distancia:0,6 km
+  
+            
+      </Text>
+    </Card>
+
+    <Card style={styles.card}  status='primary'    header={Header}>
+      <Text>
+      Bairro: teste
+  
+            
+      </Text>
+      <Text>
+
+Rua: teste do teste n:144
+      
+</Text>
+
+  
+          <Text>
+  Distancia:0,6 km
+  
+            
+      </Text>
+    </Card>
+
+    <Card style={styles.card}  status='primary'    header={Header}>
+      <Text>
+      Bairro: teste
+  
+            
+      </Text>
+      <Text>
+
+Rua: teste do teste n:144
+      
+</Text>
+
+  
+          <Text>
+  Distancia:0,6 km
+  
+            
+      </Text>
+    </Card>
+
 
     
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: Clinico
-  
-            
-      </Text>
-    </Card>
-
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: ginicologista
-  
-            
-      </Text>
-    </Card>
-
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: cardiologista
-  
-            
-      </Text>
-    </Card>
-
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: pediatra
-  
-            
-      </Text>
-    </Card>
-
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: urologista 
-  
-            
-      </Text>
-    </Card>
-
-
+    
         </Layout>
         </ScrollView>
     </>
@@ -250,4 +226,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default Agendado
+export default UBS
