@@ -27,7 +27,7 @@ const HomeScreen = () => {
   }
 
 
-  
+
 
   function navigateSaude() {
     navigation.navigate('Unidade de Saude', {})
@@ -35,19 +35,19 @@ const HomeScreen = () => {
 
   return (
     <>
-      <Layout style={styles.containerMain} level='1'>  
+      <Layout style={styles.containerMain} level='1'>
         <Layout style={styles.ContainerDiv1} level='1'>
 
           <Card onPress={() => navigatePerfil()} style={styles.cardImg} >
 
             <Card style={styles.Containerimg}>
 
-              <AntDesign onPress={() =>navigatePerfil()} name="user" size={40} color="purple" />
+              <AntDesign onPress={() => navigatePerfil()} name="user" size={40} color="purple" />
 
             </Card>
 
 
-            <Text category='h6' style={styles.txt}>Profile</Text>
+            <Text category='h6' style={styles.txt}>Carteirinha Virtual</Text>
           </Card>
 
 
@@ -56,7 +56,7 @@ const HomeScreen = () => {
 
 
 
-          <Card onPress={() =>  navigateMedicamento()} style={styles.cardImg} >
+          <Card onPress={() => navigateMedicamento()} style={styles.cardImg} >
 
             <Card style={styles.Containerimg}>
 
@@ -65,20 +65,22 @@ const HomeScreen = () => {
             </Card>
 
 
-            <Text category='p' style={styles.txt}>Medicamento</Text>
+            <Text category='h6' style={styles.txt}>Medicamento</Text>
           </Card>
 
 
           <Card onPress={() => navigateBack()} style={styles.cardImg} >
 
             <Card style={styles.Containerimg}>
-            <FontAwesome5 name="file-medical-alt" size={40} color="orange" />
-             
+
+              <FontAwesome5 name="file-medical-alt" size={40} color="orange"  onPress={() => navigateBack()}/>
+
 
             </Card>
 
 
             <Text category='h6' style={styles.txt}>Consulta</Text>
+
           </Card>
         </Layout>
         <Layout style={styles.ContainerDiv2} level='1'>
@@ -87,13 +89,13 @@ const HomeScreen = () => {
 
             <Card onPress={() => navigateCarteira()} style={styles.Containerimg}>
 
-            <MaterialCommunityIcons name="gesture-spread" size={40} color="green" />
+              <FontAwesome5 name="notes-medical" size={40} color="green" />
 
             </Card>
 
 
-            <Text category='p' style={styles.txt}>Carteira V.</Text>
-           
+            <Text category='h6' style={styles.txt}>Vacinação</Text>
+
           </Card>
 
 
@@ -101,7 +103,7 @@ const HomeScreen = () => {
 
             <Card style={styles.Containerimg}>
 
-            <MaterialIcons onPress={() => navigateSchedule()} name="schedule" size={40} color="blue" />
+              <MaterialIcons onPress={() => navigateSchedule()} name="schedule" size={40} color="blue" />
 
             </Card>
 
@@ -115,12 +117,12 @@ const HomeScreen = () => {
 
             <Card onPress={() => navigateSaude()} style={styles.Containerimg}>
 
-            <FontAwesome5 name="hand-holding-medical" size={40} color="#99ffff" />
+              <FontAwesome5 name="hand-holding-medical" size={40} color="#99ffff" />
 
             </Card>
 
 
-            <Text category='p' style={styles.txt}>Unidade</Text>
+            <Text category='h6' style={styles.txt}>Unidade</Text>
           </Card>
 
 

@@ -9,12 +9,13 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     backgroundColor: "#5d99c6",
+   
   },
 
   Header: {
     width: "100%",
     height: "5%",
-
+    
     marginTop: 40,
     paddingHorizontal: 25,
   },
@@ -30,13 +31,13 @@ const styles = StyleSheet.create({
   Title: {
     color: "white",
     fontWeight: "bold",
-    marginTop: 70,
+    marginTop: 30,
     marginLeft: 30,
   },
   MedContinue: {
     borderTopLeftRadius: 60,
     borderBottomRightRadius: 60,
-    marginTop: 30,
+    marginTop: 20,
     width: width,
     height: "auto",
     alignItems: "center",
@@ -50,27 +51,8 @@ const styles = StyleSheet.create({
     alignItems:'center',
 
   },
-  SearchContainer: {
-    flexDirection: 'row',
-   
-   alignItems:"center",
-   justifyContent:"center",
-   paddingHorizontal:13,
-   backgroundColor:"white",
-   borderRadius:20,
-   shadowColor: "#000",
-   shadowOffset: { width: 0, height: 3 },
-   shadowOpacity: 0.0,
-   shadowRadius: 5,
-   elevation: 3,
-   marginBottom:13,
   
-  },
-  
-  inputStyle: {
-    flex: 1,
-    padding:10,
-  },
+
 });
 
 export default styles;

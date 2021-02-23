@@ -1,11 +1,4 @@
-import {
-    Size
-} from "@ui-kitten/components/devsupport";
-import {
-    StyleSheet
-} from "react-native";
-
-
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     containerMain: {
@@ -28,8 +21,8 @@ const styles = StyleSheet.create({
     },
 
     cardImg: {
-     
-    padding:5,
+
+        padding: 5,
         marginTop: 25,
         width: '80%',
         height: '25%',
@@ -61,15 +54,16 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontFamily: 'sans-serif',
         textDecorationColor: '#000',
-        marginTop:5,
-        fontWeight:'bold'
+        marginTop: 5,
+        fontWeight: 'bold',
+        fontSize: 13
 
 
 
     },
     Containerimg: {
         borderRadius: 18,
-      width:'100%',
+        width: '100%',
         backgroundColor: '#f5f5f5',
     }
 

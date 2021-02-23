@@ -26,7 +26,7 @@ const TabNavigator = () => (
 
 
 export const Consultas = () => {
-    const [selectedIndex, setSelectedIndex] = React.useState(0);
+
 
     return (
         <>

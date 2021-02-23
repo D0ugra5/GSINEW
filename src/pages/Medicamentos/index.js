@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Avatar,
   Layout,
@@ -20,9 +20,12 @@ import {
 } from "react-native";
 
 export const Med = () => {
-  function navigateBack() {}
+  function navigateBack() { }
+
+  const [category, setCategory] = useState('')
 
   return (
+
     <SafeAreaView style={styles.Main} level="1">
       <StatusBar barStyle="light-content" backgroundColor="#5d99c6" />
 
@@ -32,7 +35,6 @@ export const Med = () => {
             <Feather name="arrow-left" size={20} color="black" />
           </TouchableOpacity>
         </View>
-
         <Text style={styles.Title} category="h3">
           Medicamentos
         </Text>
@@ -47,8 +49,8 @@ export const Med = () => {
             </Text>
 
             <Layout level="3">
-              <ItemMed   NomeMed={'Dipirona '}/>
-              <ItemMed   NomeMed={'Bezetazil '} />
+              <ItemMed NomeMed={'Dipirona '} />
+              <ItemMed NomeMed={'Bezetazil '} />
             </Layout>
 
             <Text
@@ -71,22 +73,20 @@ export const Med = () => {
             </Text>
 
             <Layout level="3" style={styles.searchDiv}>
-              <View style={styles.SearchContainer}>
 
-                <Feather name="search" color="#5d99c6" size={14} />
-                <TextInput style={styles.inputStyle} placeholder="Digite um medicamento" />
-              </View>
 
               <Layout level="3">
-              <ItemMed NomeMed={'Aspirina'} />
-              <ItemMed  NomeMed={'paracetamol'} />
-            </Layout>
+                <ItemMed NomeMed={'Aspirina'} />
+                <ItemMed NomeMed={'paracetamol'} />
+              </Layout>
 
             </Layout>
           </Layout>
         </Layout>
       </ScrollView>
     </SafeAreaView>
+    
+    
   );
 };
 
