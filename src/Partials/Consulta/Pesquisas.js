@@ -1,7 +1,7 @@
 import React from 'react';
 import { IndexPath, Layout, Text, Select, SelectItem,Card } from '@ui-kitten/components';
 import { StyleSheet,ScrollView,View } from 'react-native';
-import Constants from "expo-constants";
+
 const Header = ({props}) =>{
 
     return(
@@ -24,18 +24,18 @@ const data = [
     'Cardiologia',
     'Cirurgia Cardiovascular',
     'Cirurgia da Mão',
-    'Cirurgia Torácica',
-];
+    'Cirurgia Torácica'];
 
-const renderOption = (title) => (
-    <SelectItem title={title} />
-);
+
 
 export const Pesquisa = () => {
+  
     const [selectedIndex, setSelectedIndex] = React.useState(new IndexPath(0));
+    
     const displayValue = data[selectedIndex.row]
+
     return (
-        <>
+        
             <Layout style={styles.container2} level='1'>
                 <Text style={styles.txt}>Especialidades Médicas</Text>
                 <Select
@@ -44,8 +44,12 @@ export const Pesquisa = () => {
                     value={displayValue}
                     selectedIndex={selectedIndex}
                     onSelect={index => setSelectedIndex(index)}>
-                    {data.map(renderOption)}
+
+                    {data.map((item, index)=>(
+                      <SelectItem title={item} key={index}/> 
+                      ))}
                 </Select>
+
                 <ScrollView>
                 <Layout style={styles.container2} level='3'>
                 <Card style={styles.card}  status='primary'    header={Header}>
@@ -78,249 +82,7 @@ Data: 23/10/2021
             
       </Text>
     </Card>
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: Dentista
-  
-            
-      </Text>
-    </Card>
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: Dentista
-  
-            
-      </Text>
-    </Card>
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: Dentista
-  
-            
-      </Text>
-    </Card>
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: Dentista
-  
-            
-      </Text>
-    </Card>
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: Dentista
-  
-            
-      </Text>
-    </Card>
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: Dentista
-  
-            
-      </Text>
-    </Card>
-
-
-
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: Dentista
-  
-            
-      </Text>
-    </Card>
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: Dentista
-  
-            
-      </Text>
-    </Card>
+    
     <Card style={styles.card}  status='primary'    header={Header}>
       <Text>
       Consulta Agendada
@@ -359,7 +121,7 @@ Data: 23/10/2021
             </Layout>
             
 
-        </>
+        
     );
 }
 

@@ -18,45 +18,13 @@ return(
 
 export const Agendado = () => (
 
-    <>
+    
      <ScrollView>
         <Layout style={styles.container2} level='3'>
 
-         
-               
-                 <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
   
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: Dentista
-  
-            
-      </Text>
-    </Card>
-
     
-    <Card style={styles.card}  status='primary'    header={Header}>
+      <Card style={styles.card}  status='primary'    header={Header}>
       <Text>
       Consulta Agendada
   
@@ -76,150 +44,29 @@ Data: 23/10/2021
       
   
 
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: Clinico
-  
-            
-      </Text>
-    </Card>
+  <Text>Doutor(a): ClodoValdo Da Silva Crm: 21334</Text>
+<Text>Exame: Dentista </Text>
+  </Card>
 
     <Card style={styles.card}  status='primary'    header={Header}>
       <Text>
       Consulta Agendada
-  
-            
       </Text>
-      <Text>
+      <Text>Data: 23/10/2021</Text>
+      <Text>Horario: 14:50 </Text>
 
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: ginicologista
-  
-            
-      </Text>
-    </Card>
-
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: cardiologista
-  
-            
-      </Text>
-    </Card>
-
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: pediatra
-  
-            
-      </Text>
-    </Card>
-
-    <Card style={styles.card}  status='primary'    header={Header}>
-      <Text>
-      Consulta Agendada
-  
-            
-      </Text>
-      <Text>
-
-Data: 23/10/2021
-      
-</Text>
-  
-<Text>
-       Horario: 14:50 
-       
-       
-  </Text>
-      
-  
-
-  <Text>
-  Doutor(a): ClodoValdo Da Silva Crm: 21334
-          
-          </Text>
-          <Text>
-  Exame: urologista 
-  
-            
-      </Text>
-    </Card>
+      <Text>Doutor(a): ClodoValdo Da Silva Crm: 21334</Text>
+      <Text>Exame: urologista </Text>
+      </Card>
 
 
         </Layout>
         </ScrollView>
-    </>
-
+    
 );
 
 const styles = StyleSheet.create({
-    container2: {
+  container2: {
         flex: 1,
         flexDirection: "column",
         alignItems:'center',
