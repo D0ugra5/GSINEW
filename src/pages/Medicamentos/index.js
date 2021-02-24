@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
+
+import axios from 'axios';
+
+
 import {
-  Avatar,
+
   Layout,
   Text,
-  Button,
-  Icon,
-  Input,
+
+  Select,
+  SelectItem,
+  IndexPath,
 } from "@ui-kitten/components";
 import styles from "./styles";
 import ItemMed from "../../components/MediList/index.js";
@@ -16,13 +22,53 @@ import {
   StatusBar,
   View,
   TouchableOpacity,
-  TextInput,
+  
 } from "react-native";
 
 export const Med = () => {
   function navigateBack() { }
 
-  const [category, setCategory] = useState('')
+  const data = [
+    'dipirona',
+    'paracetamol',
+    'metafetamina',
+    'doril',
+
+  ];
+
+  const [selectedIndex, setSelectedIndex] = React.useState(new IndexPath(0));
+
+
+  const displayValue = data[selectedIndex.row]
+
+  console.log(displayValue)
+
+  const [meds, setMeds] = useState([]);
+
+
+  useEffect(() => {
+    getMed()
+  }, [displayValue])
+
+
+  async function getMed() {
+
+    if (displayValue) {
+      try {
+        const response = await axios.get(`http://192.168.0.162:3333/teste/${displayValue}`)
+        setMeds(response.data);
+
+      } catch (error) {
+        console.log('deu erro')
+        console.log(error)
+      }
+
+
+      
+    }else{
+      console.log('nao tem med')
+    }
+  }
 
   return (
 
@@ -30,11 +76,13 @@ export const Med = () => {
       <StatusBar barStyle="light-content" backgroundColor="#5d99c6" />
 
       <ScrollView>
+
         <View style={styles.Header}>
           <TouchableOpacity style={styles.Button}>
             <Feather name="arrow-left" size={20} color="black" />
           </TouchableOpacity>
         </View>
+
         <Text style={styles.Title} category="h3">
           Medicamentos
         </Text>
@@ -48,10 +96,32 @@ export const Med = () => {
               Uso Continuo
             </Text>
 
+
+            <Text style={styles.txtSearch}>Procure Um Medicamento</Text>
+            <Select
+              style={styles.select}
+              placeholder='Default'
+              value={displayValue}
+              selectedIndex={selectedIndex}
+              size="large"
+              onSelect={index => setSelectedIndex(index)}>
+
+              {data.map((item, index) => (
+                <SelectItem title={item} key={index} style={styles.SelectItem} />
+              ))}
+            </Select>
+
+
+
             <Layout level="3">
-              <ItemMed NomeMed={'Dipirona '} />
-              <ItemMed NomeMed={'Bezetazil '} />
+              {meds.map((item, index) => (
+                <ItemMed NomeMed={item.Nome} Venc={item.Venc} key={index} />
+              ))}
+
+
             </Layout>
+
+
 
             <Text
               category="h5"
@@ -85,8 +155,8 @@ export const Med = () => {
         </Layout>
       </ScrollView>
     </SafeAreaView>
-    
-    
+
+
   );
 };
 
