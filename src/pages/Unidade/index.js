@@ -1,6 +1,6 @@
 import React from 'react';
 import { TabBar, Tab, Layout, Text } from '@ui-kitten/components';
-import CamposInput from '../../components/CampoInp.js'
+
 import styles from './styles'
 import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
@@ -8,7 +8,7 @@ import Cras from './cras'
 import Hospital from './hospital'
 import Ubs from './ubs'
 
-import Agendados from '../../Partials/Consulta/Agendadas.js'
+
 const { Navigator, Screen } = createMaterialTopTabNavigator();
 const TopTabBar = ({ navigation, state }) => (
     <TabBar

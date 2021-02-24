@@ -4,7 +4,7 @@ import { Input, Layout, Text } from "@ui-kitten/components";
 
 import styles from "./styles";
 
-export const ItemMed = ({NomeMed}) => {
+export const ItemMed = ({NomeMed,Venc}) => {
   return (
     <Layout style={styles.container} level="2">
       <View style={styles.Divtitle}>
@@ -12,7 +12,7 @@ export const ItemMed = ({NomeMed}) => {
       </View>
 
       <View style={styles.DivInfo}>
-        <Text style={styles.TextInfo}>15/01/2021</Text>
+        <Text style={styles.TextInfo}>{Venc}</Text>
       </View>
     </Layout>
   );

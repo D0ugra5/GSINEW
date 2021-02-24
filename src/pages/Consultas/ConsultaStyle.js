@@ -7,14 +7,11 @@ const styles = StyleSheet.create({
     containerMain: {
         flex: 1,
 
-   
-        
-
     },
 
     ContainerText: {
 
-zIndex:1,
+        zIndex: 1,
 
 
 
@@ -26,7 +23,9 @@ zIndex:1,
         marginRight: 20,
 
     },
-
+container:{
+    flex:1,
+}
 });
 
 export default styles

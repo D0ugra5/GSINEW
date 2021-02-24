@@ -9,13 +9,13 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     backgroundColor: "#5d99c6",
-   
+
   },
 
   Header: {
     width: "100%",
     height: "5%",
-    
+
     marginTop: 40,
     paddingHorizontal: 25,
   },
@@ -48,10 +48,23 @@ const styles = StyleSheet.create({
     width: width - 50,
     height: "auto",
     padding: 10,
-    alignItems:'center',
+    alignItems: 'center',
 
   },
-  
+  select: {
+    width: width - 100,
+    borderRadius:3,
+    marginBottom:20,
+    
+  },
+  txtSearch: {
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  SelectItem:{
+    borderRadius:10,
+  }
+
 
 });
 
